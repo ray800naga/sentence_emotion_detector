@@ -29,10 +29,11 @@ print('train :', len(df_train))
 print('test :', len(df_test))
 
 # モデル指定・Tokenizer読み込み
-# model_name = 'cl-tohoku/bert-base-japanese-whole-word-masking'
+model_name = 'cl-tohoku/bert-base-japanese-whole-word-masking'
 # model_name = "cl-tohoku/bert-base-japanese-v3"
 # model_name = "cl-tohoku/bert-large-japanese-v2"
-model_name = "cl-tohoku/bert-base-japanese-char-v3"
+# model_name = "cl-tohoku/bert-base-japanese-char-v3"
+# model_name = "cl-tohoku/bert-large-japanese-char-v2"
 checkpoint = model_name
 tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
